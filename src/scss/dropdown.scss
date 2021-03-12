@@ -1,0 +1,37 @@
+@import '../scss/variables.scss';
+
+// .offerMenu{
+//     position: relative;
+// }
+.dropdown-menu{
+    width: 350px;
+    position: absolute;
+    right: 50%;
+    background-color: $warm-violet;
+    list-style: none;
+    top: 60px;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown-link{
+    font-size: 13px;
+    color: white;
+    li{
+        margin-bottom: 40px;
+    }
+
+}
+
+.nav-menu{
+    a{
+        color: white;
+
+    }
+}
+
+.dropdown-menu-clicked{
+    width: 300px;
+    height: 300px;
+}

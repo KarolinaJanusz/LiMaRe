@@ -1,0 +1,99 @@
+@import './variables.scss';
+
+@mixin siteTitle{
+    font-family: 'Shadows Into Light Two';
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 50px;
+    position: relative;
+    padding: 10px;
+    color: $warm-violet;
+    font-weight: normal;
+    margin-bottom: 60px;
+    &::after{
+        border-bottom: 4px solid $skin-color;
+        display: block;
+        content: "";
+        width: 300px;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        
+       
+    }
+}
+
+.sitetitle{
+    @include siteTitle()
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    
+    .description{
+        display: none;
+        p{
+            display: none;
+        }
+    }
+    
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+    a{
+        color: $warm-violet;
+        text-decoration: none;
+        
+    }
+}
+
+.featuredImages{
+    height: 200px;
+    width: 300px;
+}
+
+.posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-end;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
+    max-width: 90vw;
+    @media (max-width: 995px){
+        grid-template-columns: 1fr;
+        column-gap: 100px;
+    }
+    
+}
+
+.post{
+    width: 300px;
+    
+}
+
+.single-article{
+    max-width: 80vw;
+    position: relative;
+    margin: 0 auto;
+    h1{
+        font-family: 'Shadows Into Light Two';
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.offerParagraph{
+    span{
+        font-weight: bold;
+    }
+}

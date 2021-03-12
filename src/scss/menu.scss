@@ -1,0 +1,130 @@
+.mainNav{
+    display: flex;
+    background-color: $warm-violet;
+    color: white;
+    width: 100vw;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    a{
+        text-decoration: none;
+        
+    }
+
+
+.nav-menu{
+    display: flex;
+    // max-width: 100vw;
+    margin-right: 20px;
+    width: 100vw;
+    .nav-item{
+        color: white;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-decoration: none;
+      
+        @media (max-width: 1042px){
+            display: none;
+        }
+    }
+    a{
+        color: white;
+        &:hover{
+            border-bottom: 1px solid white;
+        }
+    }
+.fa-caret-down{
+    font-size: 15px;
+}
+    
+}
+}
+
+.arrow-list{
+    display: flex;
+}
+
+.menu-img{
+    width:20%;
+    margin-left: 30px;
+
+    @media(max-width: 727px){
+        width: 30%;
+    }
+}
+
+@mixin menuIcon{
+    display: none;
+
+    @media (max-width: 1042px){
+        display: block;
+        position: absolute;
+        right: 20px;
+        font-size: 40px;
+        top: 25px;
+        color: white;
+    }
+}
+.fa-bars{
+    @include menuIcon()
+}
+.fa-times{
+    @include menuIcon()
+}
+
+.nav-menu-active{
+    background-color: $warm-violet;
+    opacity: 0.5;
+    width: 100vw;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    li{
+        color: white;
+        font-family: $main-font;
+        margin: 20px;
+        text-align: center;
+        
+    }
+    a{
+        color: white;
+        z-index: 3;
+        
+    }
+}
+
+// .offerMenu{
+//     padding: 20px;
+// }
+
+
+
+
+
+// .mobile-menu {
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 32px;
+//     height: 32px;
+//     display: block;
+//     color: transparent;
+//   }
+
+//   .mobile-menu nav {
+//     border-radius: 4px;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//   }
+

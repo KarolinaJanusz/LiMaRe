@@ -1,0 +1,120 @@
+.Footer{
+    background-color: $skin-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    padding: 10px;
+    a{
+        width: 10%;
+        height: 10%;
+    }
+
+    @media(max-width: 600px){
+        display: block;
+        text-align: center;
+    }
+}
+
+.logo-footer{
+        width: 100%;
+        @media(max-width: 600px){
+            width: 30%;;
+        }
+
+}
+
+.menu-footer-list{
+    li{
+        color: rgb(126, 125, 125);
+        margin-bottom: 5px;
+    }
+    a{
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .fa-chevron-right{
+        padding-right: 15px;
+    }
+
+    @media(max-width: 600px){
+        margin-top: 20px;
+    }
+}
+
+.contact-footer-list{
+    li{
+        color: rgb(126, 125, 125);
+        text-align: start;
+        margin-bottom: 5px;
+        @media(max-width: 600px){
+            text-align: center;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+
+    @media(max-width: 600px){
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+
+// .contact-footer-list{
+//     width: 600px;
+// }
+
+
+// .Footer{
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     text-align: center;
+//     margin-top: 30px;
+//     background-color: $skin-color;
+//     list-style-type: none;
+//     text-decoration: none;
+//     padding: 20px 30px;
+//             @media (max-width: 995px){
+//             justify-content: space-between;
+// }
+//     p{
+//         font-weight: bold;
+//         color: rgb(104, 103, 103);
+//         text-decoration: none;
+//         text-align: center;
+//             @media (max-width: 995px){
+//             font-size: 15px
+// }
+//     }
+
+//     a{
+//         text-decoration: none;
+//         width: 50%;
+//     }
+    
+// }
+
+// .logo-footer{
+//     width: 40%;
+//     max-width: 600px;
+//             @media (max-width: 995px){
+//             width: 60%;
+//     }
+// }
+
+// .footerList{
+//         color: rgb(104, 103, 103);
+//         text-decoration: none;
+//         width: 150px;
+//         @media (max-width: 995px){
+//         font-size: 10px;
+// }
+// }
+
+

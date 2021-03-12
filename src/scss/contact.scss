@@ -1,0 +1,103 @@
+.contactTitle{
+    @include siteTitle;
+}
+
+@mixin Inputs{
+    width: 300px;
+    border: 1px solid $orange-color;
+    font-family: $main-font;
+    margin: 10px 0 10px 0;
+}
+
+@mixin Icon {
+    padding: 10px;
+    background-color: $orange-color;
+    font-size: 30px;
+    color: white;
+    border-radius: 50px;
+    margin: 10px
+}
+
+.ContactForm{
+    margin: 30px auto;
+    width: 600px;
+    padding: 50px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 23px 0px rgba(233, 178, 0, 0.68);
+    -moz-box-shadow:    0px 0px 23px 0px rgba(233, 178, 0, 0.68);
+    box-shadow:         0px 0px 23px 0px rgba(233, 178, 0, 0.68);
+    @media (max-width: 727px){
+        width: 300px;
+        padding: 15px;
+    }
+h1{
+    margin-bottom: 30px;
+    font-family: $second-font;
+    color: $warm-violet;
+    font-weight: normal;
+}
+}
+
+.inputStyle{
+    @include Inputs();
+    height: 30px;
+}
+
+textarea{
+    @include Inputs();
+    height: 70px;
+}
+
+.submitbtn{
+    width: 60px;
+    height: 30px;
+    background-color: $skin-color;
+    border: 1px solid $orange-color;
+    font-family: $main-font;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid $orange-color;
+}
+
+textarea:focus{
+    outline: none;
+    border: 2px solid $orange-color;
+}
+
+
+
+
+.contactDetails{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    div{
+        margin: 40px;
+    }
+
+    @media (max-width: 727px){
+        display: inline;
+    }
+
+    .fa-envelope{
+        @include Icon()
+    }
+    
+    .fa-phone{
+        @include Icon()
+    }
+}
+
+.map{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+}
+
+// errors{
+//     color: red;
+// }
